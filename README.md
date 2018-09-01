@@ -11,9 +11,9 @@ Take the following ascii-art representation:
                A                               R                   | - CAT      
           -----------                     -----------              | - CATTY     All of the words
          /           \                   /           \             | - CATS     to the right of the
-       R               T               A               O           | - CRATE     the trie are words
-     -----           -----           -----           -----         | - CRAZE     that are retriev-
-    /     \         /     \         /     \         /     \        | - CRAZY    able from the trie.
+       R               T               A               O           | - CRATE    trie are words that
+     -----           -----           -----           -----         | - CRAZE      are retrievable
+    /     \         /     \         /     \         /     \        | - CRAZY       from the trie.
    T       P       T       S       T       Z       W       O       | - CROW     
   ---     ---     ---     ---     ---     ---     ---     ---      | - CROWN    
   /               /               /       / \     / \     / \      | - CROWS    
