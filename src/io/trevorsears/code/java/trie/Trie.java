@@ -71,6 +71,15 @@ public class Trie<V> {
 		
 	}
 	
+	public boolean contains(String query) {
+	
+		TrieNode<V> result = searchForNode(query);
+		
+		if (result == null) return false;
+		else return result.hasValue();
+	
+	}
+	
 	private TrieNode<V> searchForNode(String query) {
 		
 		StringCharacterQueue stringCharacterQueue = new StringCharacterQueue(query);
@@ -108,7 +117,6 @@ public class Trie<V> {
 	private ArrayList<V> getAllValuesIn(TrieNode<V> node) {
 		
 		ArrayList<V> values = new ArrayList<>();
-		TrieNode<V> currentNode = node;
 		if (node.hasValue()) values.add(node.getValue());
 		
 		if (node.hasChildren()) {
